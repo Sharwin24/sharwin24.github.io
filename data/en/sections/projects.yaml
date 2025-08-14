@@ -76,6 +76,15 @@ projects:
   summary: Teaching a Jackal mobile robot with a LiDaR to navigate using reinforcement learning with Mujoco.
   tags: ["Python", "Reinforcement Learning", "Mujoco", "PPO", "LiDaR"]
 
+- name: Extended Kalman Filter for a 6-wheel Mars Rover
+  image: /images/rocker_bogie_diagram.png
+  role: "Personal Project"
+  timeline: "August 2025 - Present"
+  url: "/posts/perseverance/"
+  repo: https://github.com/Sharwin24/Perseverance
+  summary: State estimation using a kalman filter for a 6-wheel Mars rover with a rocker-bogie suspension system.
+  tags: ["Python", "C++", "Extended Kalman Filter", "Sensor Fusion", "Robot Dynamics"]
+
 - name: Chess Robot
   role: "NEU Robotics Club Project"
   image: /images/chess_robot.gif
@@ -85,14 +94,14 @@ projects:
   summary: A gantry robot equipped with a camera to autonomously play and teach chess to human opponents.
   tags: ["Python", "OpenCV", "Arduino", "Stepper Motors"]
 
-- name: Racing Simulator with VIO
-  image: /images/turtlebot_video.png
-  role: "MSAI495: Computer Vision Final Project"
-  timeline: "April 2025 - June 2025"
-  url: "/posts/turtlebot-racing/"
-  repo: https://github.com/Sharwin24/Visual-Pose-Graph-Estimation
-  summary: Utilized a turtlebot3 with a Zed 2i camera to create a racing simulator that uses Visual-Inertial Odometry (VIO) for localization and mapping.
-  tags: ["Computer Vision", "C++", "OpenCV", "Zed 2i Camera", "Visual-Inertial Odometry"]
+# - name: Racing Simulator with VIO
+#   image: /images/turtlebot_video.png
+#   role: "MSAI495: Computer Vision Final Project"
+#   timeline: "April 2025 - June 2025"
+#   url: "/posts/turtlebot-racing/"
+#   repo: https://github.com/Sharwin24/Visual-Pose-Graph-Estimation
+#   summary: Utilized a turtlebot3 with a Zed 2i camera to create a racing simulator that uses Visual-Inertial Odometry (VIO) for localization and mapping.
+#   tags: ["Computer Vision", "C++", "OpenCV", "Zed 2i Camera", "Visual-Inertial Odometry"]
 
 - name: Robot Arm Educational Kit
   image: /images/kavar_background.jpg

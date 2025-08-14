@@ -24,6 +24,3 @@ The Jackal is a simple differential drive robot with an impressive payload capac
     allowfullscreen>
   </iframe>
 </div>
-
-
-_This post is under construction._
