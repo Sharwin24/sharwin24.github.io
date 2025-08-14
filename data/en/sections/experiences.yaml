@@ -6,7 +6,7 @@ section:
   weight: 1
   showOnNavbar: true
   # Can optionally hide the title in sections
-  # hideTitle: true 
+  # hideTitle: true
 
 # Your experiences
 experiences:
@@ -26,6 +26,7 @@ experiences:
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     responsibilities:
     - Reduced mobile robots' downtime with optimizations to the fleet's charging behavior.
+    - Optimized robot navigation behavior when interacting with chargers, robot queues, and other warehouse resources.
 - company:
     name: GreenSight Inc.
     url: "https://www.greensightag.com/"
