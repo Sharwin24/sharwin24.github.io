@@ -105,6 +105,16 @@
     }
   }
 
+  .experience-tags-holder {
+    margin: 0.25rem 0 0.75rem 0;
+    .badge {
+  font-size: 0.95rem; /* slightly larger than default */
+  padding: 0.4em 0.6em;
+      margin-right: 0.35rem;
+      margin-bottom: 0.35rem;
+    }
+  }
+
   @include media('<=medium') {
     .container {
       max-width: 100%;
