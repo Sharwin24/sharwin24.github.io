@@ -9,7 +9,6 @@ menu:
   sidebar:
     name: Robotech
     identifier: robo-tech
-    weight: 8
 tags: ["Python", "RRT", "A*"]
 repo: https://github.com/Sharwin24/RoboTech
 # categories: ["Basic"]
@@ -20,9 +19,9 @@ A graphical simulation of a swarm of robotic agents cleaning algal bloom in a la
 ## The Problem Statement
 One of the most detrimental factors to the environment is the pollution and destruction to the oceans and all marine life. Aquatic habitats are incredibly beneficial for the sustainability of the planet since they act as massive carbon sinks and lower overall greenhouse gas emissions.
 
-We've decided to focus on Algae blooms and their impact on lake/pond environments. Algae blooms produce toxins that kill marine animals, contaminate potential drinking water, and even create dead zones in large bodies of water. 
+We've decided to focus on Algae blooms and their impact on lake/pond environments. Algae blooms produce toxins that kill marine animals, contaminate potential drinking water, and even create dead zones in large bodies of water.
 
-Dead zones are areas in a body of water that have minimal oxygen and aren't capable of supporting marine life. Algae blooms among other climate change stressors have contributed to an approximate 250,000 square kilometers of dead zones on the globe. 
+Dead zones are areas in a body of water that have minimal oxygen and aren't capable of supporting marine life. Algae blooms among other climate change stressors have contributed to an approximate 250,000 square kilometers of dead zones on the globe.
 
 Algae blooms are generated due to excess nitrogen and phosphorus in the water. These chemicals are pumped into the ocean from sewage effluent, manufacturing byproducts, etc.
 
@@ -33,11 +32,11 @@ Autonomous Swarm Cleaning Robots: ASCR.
 
 Our strategy will be to deploy a swarm (coordinated fleet) of aquatic rovers to clear out large Algal blooms within a body of water of any size.
 
-There are 2 major components: 
+There are 2 major components:
 <ul>
 <li>The Supervisor Module</li>
 <li>Fleet of Aquatic Drones</li>
-</ul> 
+</ul>
 The supervisor is deployed initially and will survey the immediate surrounding area using a collection of a few sensors, and will plan sub-routines for the fleet of aquatic drones it carries.
 
 Each drone is outfitted with an array of sensors, as well as a scrubbing and storage aparatus to clear out Algae and store it. The drones all have pre-determined cleaning paths organized and managed by the supervisor. Multiple runs are expected due to the small size of the drones and the amount of algae they can hold before needing to come back to the supervisor to expel the collected algae.
@@ -74,7 +73,7 @@ Code for RRT* can be found in the files:
 <li><code>simulation.py</code></li> -> RRT* Implemented into Sim
 </ul>
 
-Within <code>simulation.py</code>, there are many parameters (with documentation!) that can be tuned to better visualize the varying levels of performance that comes with different number of drones, drone speed, RRT depth, etc. Note that being over-generous with the parameters can induce large computations on the PC and may not run fast or at all. However, once you're past the black screen while the paths are being generated, the simulation will keep going until the <code>MAX_DEPTH</code> of paths for each drone are reached. 
+Within <code>simulation.py</code>, there are many parameters (with documentation!) that can be tuned to better visualize the varying levels of performance that comes with different number of drones, drone speed, RRT depth, etc. Note that being over-generous with the parameters can induce large computations on the PC and may not run fast or at all. However, once you're past the black screen while the paths are being generated, the simulation will keep going until the <code>MAX_DEPTH</code> of paths for each drone are reached.
 
 Take note of what areas of the lake the drones are more drawn too...
 

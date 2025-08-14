@@ -9,12 +9,11 @@ menu:
   sidebar:
     name: Automated Poker Table
     identifier: automated-poker-table
-    weight: 4
 tags: ["Arduino", "Python", "Raspberry Pi", "I2C", "Stepper Motors"]
 repo: https://github.com/Connor205/B-I-K-E
 # categories: ["Basic"]
 ---
-The B-I-K-E (Best in Kard Entertainment) Poker Table is a capstone project for the Northeastern University Electrical and Computer Engineering program. 
+The B-I-K-E (Best in Kard Entertainment) Poker Table is a capstone project for the Northeastern University Electrical and Computer Engineering program.
 
 
 Collaborated with:

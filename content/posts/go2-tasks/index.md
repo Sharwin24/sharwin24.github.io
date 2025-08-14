@@ -9,7 +9,6 @@ menu:
   sidebar:
     name: Unitree Go2 New Tasks
     identifier: go2-tasks
-    weight: 5
 tags: ["Python", "Reinforcement Learning", "PPO", "Genesis"]
 repo: https://github.com/HarrisonBounds/go2RL
 ---

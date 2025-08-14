@@ -9,9 +9,8 @@ menu:
   sidebar:
     name: Turtlebot Racing
     identifier: turtlebot-racing
-    weight: 5
 tags:   ["Computer Vision", "C++", "OpenCV", "Zed 2i Camera", "VIO"]
 repo: https://github.com/Sharwin24/Visual-Pose-Graph-Estimation
 ---
 
-_This post is under construction_
+<div align="center"><em>Work in progress</em></div>

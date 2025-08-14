@@ -9,7 +9,6 @@ menu:
   sidebar:
     name: Mobile Manipulation
     identifier: mobile-manipulation
-    weight: 3
 tags: ["Python", "CoppeliaSim", "Odometry", "Omnidirectional Robot Kinematics"]
 repo: https://github.com/Sharwin24/Mobile-Manipulation
 # categories: ["Basic"]
@@ -28,7 +27,7 @@ This robot uses mecanum wheels, which are omnidirectional wheels with 45-degree 
 <div style="overflow-x: auto; width: 100%;">
     \[
     u_i=\frac{1}{r_i}\overbrace{\begin{bmatrix}1 & \tan\gamma_i\end{bmatrix}}^{\text{driving direction}}
-    \underbrace{\begin{bmatrix}\cos\beta_i & \sin\beta_i \\ -\sin\beta_i & \cos\beta_i\end{bmatrix}}_{\text{linear velocity in wheel frame}} 
+    \underbrace{\begin{bmatrix}\cos\beta_i & \sin\beta_i \\ -\sin\beta_i & \cos\beta_i\end{bmatrix}}_{\text{linear velocity in wheel frame}}
     \overbrace{\begin{bmatrix}-y_i & 1 & 0 \\ x_i & 0 & 1\end{bmatrix}}^{\text{linear velocity in body frame}} V_b
     \]
 </div>
@@ -255,7 +254,7 @@ class RobotConstants:
             [1, 1, 1, 1],
             [-1, 1, -1, 1]
         ])
-    
+
     def Je(self, arm_thetas: np.array, violated_joints: list[int] = []) -> np.array:
         """
         Compute the Mobile Manipulator Jacobian given the arm joint angles and the list of joints that break joint limits.

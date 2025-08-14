@@ -9,7 +9,6 @@ menu:
   sidebar:
     name: Napkin.AI
     identifier: napkin-ai
-    weight: 9
 tags: ["Python", "PyTorch", "Retrieval-Augmented Generation", "Knowledge Graphs", "Language Models"]
 repo: https://github.com/Sharwin24/HackAtBrown
 # categories: ["Basic"]
@@ -58,9 +57,9 @@ Finally, we implemented a prompt augmentation engine that used the set of nodes 
 ## 🛑 Challenges we ran into
 We began our project hoping to implement one of two preexisting models for knowledge graph generation from python repositories. The first was Google research's [python-graphs](https://github.com/google-research/python-graphs), which excels at creating in-depth control flow graphs and program graphs from functions in python. However, we quickly realized that this model was not well-suited for our purposes, as it was designed primarily for functions and single files at largest, and would not be able to handle the scale of a full codebase. Our model relies on a thorough understanding of the entire codebase and the relationships between distinct files, functions, and classes, which python-graphs was not designed to handle. The next model we attempted to use was IBM Wala's [graph4code](https://github.com/wala/graph4code), which builds upon models such as python-graphs by explicitly modeling library calls, following data flow across functions, and simulating function calls. Despite its appeal, the model was not as well-documented and we spent many hours attempting to implement it towards the beginning of the hackathon only to choose another route. In the end, we decided that neither of these models would be able to handle the scale and complexity of a full codebase, and that we would need to build our own knowledge graph creation tool from scratch.
 
-Upon constructing the graph by recursively traversing the AST of every file in the repository, we then discovered that we needed to perform a significant amount of cleaning. Nodes which provided minimal amounts of data, such as small functions with no children, did not provide enough value to warrant keeping in the graph, as their parent function/class/file would already contain all of the relevant information. We also needed to remove any nodes such that the raw text they contained was too large for the model to reasonably handle. This process of parsing, pruning, and later serializing our graph took a significant amount of time and effort we hoped to have spent implementing a preexisting model. 
+Upon constructing the graph by recursively traversing the AST of every file in the repository, we then discovered that we needed to perform a significant amount of cleaning. Nodes which provided minimal amounts of data, such as small functions with no children, did not provide enough value to warrant keeping in the graph, as their parent function/class/file would already contain all of the relevant information. We also needed to remove any nodes such that the raw text they contained was too large for the model to reasonably handle. This process of parsing, pruning, and later serializing our graph took a significant amount of time and effort we hoped to have spent implementing a preexisting model.
 
-Ultimately, we struggled to get our model to perform as well as we had hoped. This could have been due to limitations in the model itself, a lack of training data, or a fault in our graph parsing implementation. 
+Ultimately, we struggled to get our model to perform as well as we had hoped. This could have been due to limitations in the model itself, a lack of training data, or a fault in our graph parsing implementation.
 
 ## 😁 Accomplishments that we're proud of
 We're proud of our hard work pulling together a variety of different tools, models, and algorithms to create a cohesive and effective tool for navigating codebases. We're particularly proud of our knowledge graph parser, which we built from scratch and which we believe is a powerful and effective tool for understanding the relationships between files, classes, and functions in a codebase for applications beyond our immediate project.
@@ -68,7 +67,7 @@ We're proud of our hard work pulling together a variety of different tools, mode
 We're also glad with the balance of accuracy and efficiency in our graph retrieval algorithm. We're extremely proud of the way that we were able to pull all of these tools together into a cohesive and effective tool for navigating codebases, and we're excited to see where it goes from here.
 
 ## 🧑‍🎓 What we learned
-We learned the about the challenges of working on a full machine learning pipeline that requires data cleaning, embedding, and fine-tuning. At every step of the way, we had a variety of tough decisions to make that stretched us and led to valuable discussions about the best way to proceed. 
+We learned the about the challenges of working on a full machine learning pipeline that requires data cleaning, embedding, and fine-tuning. At every step of the way, we had a variety of tough decisions to make that stretched us and led to valuable discussions about the best way to proceed.
 
 We also gained meaningful experience building our own complex graph creation and retrieval algorithms, which was a new and exciting challenge for us. We really enjoyed pursuing this open ended question as there were a huge variety of approaches we could have taken.
 
@@ -79,11 +78,11 @@ There are four main ways for Napkin to enhance and fine tune its performance:
 3. Graph retrieval fine tuning
 4. Embedding fine tuning
 
-Firstly, the knowledge graph could be improved by increasing the capacity for nodes and edges, particularly for more categories than just files, classes, and functions. 
+Firstly, the knowledge graph could be improved by increasing the capacity for nodes and edges, particularly for more categories than just files, classes, and functions.
 
 Secondly, the chatbot could be fine-tuned to better understand how to answer codebase questions and provide more relevant information. This would require some prompt engineering to best present the information to the chatbot, as well as extra model training with a larger dataset of codebase questions and answers.
 
-The graph retrieval algorithm we implemented was based on a greedy heuristic search that maximized cosine similarity at each step, which was just one of many options. For example, we discussed pursuing Monte Carlo Tree Search as our main algorithm and adding weighted edges depending on the type of relationship between components to encourage the model to traverse the graph in a more meaningful way. 
+The graph retrieval algorithm we implemented was based on a greedy heuristic search that maximized cosine similarity at each step, which was just one of many options. For example, we discussed pursuing Monte Carlo Tree Search as our main algorithm and adding weighted edges depending on the type of relationship between components to encourage the model to traverse the graph in a more meaningful way.
 
 Finally, the embeddings used to represent the nodes in the graph could be fine-tuned to better represent the relationships between nodes. This would require a more sophisticated model to be used to generate the embeddings, as well as a more sophisticated method of training the model to best represent the relationships between nodes.
 

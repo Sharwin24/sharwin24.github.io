@@ -9,7 +9,6 @@ menu:
   sidebar:
     name: RL Exploration
     identifier: rle
-    weight: 5
 tags:  ["Python", "Reinforcement Learning", "Mujoco", "PPO", "LiDAR"]
 repo: https://github.com/HarrisonBounds/RLE
 ---

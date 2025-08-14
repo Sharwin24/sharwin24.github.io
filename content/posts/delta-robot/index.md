@@ -9,7 +9,6 @@ menu:
   sidebar:
     name: Delta Robot
     identifier: delta-robot
-    weight: 1
 tags: ["ROS2", "C++", "Python", "OnShape", "Parallel Robot Kinematics", "I2C Sensors", "Alpha-Beta Filtering"]
 repo: https://github.com/Sharwin24/DeltaRobot
 ---
@@ -32,7 +31,7 @@ The forward and inverse kinematics were then implemented in C++ following the ap
 <div>
   <details>
     <summary>Forward and Inverse Kinematics C++ Implementation as ROS services</summary>
-    
+
   ```cpp
   // this->AL = Active Link Length [mm]
   // this->PL = Passive Link Length [mm]
@@ -342,7 +341,7 @@ The alpha and beta parameters were tuned empirically to improve the signal from 
 <div>
   <details>
     <summary>Alpha-Beta Filter ROS C++ Implementation</summary>
-  
+
   ```cpp
     /**
     * @struct AlphaBetaFilter
