@@ -55,7 +55,7 @@ projects:
   timeline: "Jan 2023 - April 2023"
   url: "/posts/automated-poker-table/"
   repo: "https://github.com/Connor205/B-I-K-E"
-  summary: An robotic system that faciliates a game of poker with automated shuffling, dealing, and game management.
+  summary: A robotic system that facilitates a game of poker with automated shuffling, dealing, and game management.
   tags: ["Arduino", "Python", "Raspberry Pi", "I2C", "Stepper Motors", "Solidworks"]
 
 - name: Teaching an Old Dog New Tricks
