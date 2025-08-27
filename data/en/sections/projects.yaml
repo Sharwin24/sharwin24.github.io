@@ -77,7 +77,7 @@ projects:
   tags: ["Python", "Reinforcement Learning", "Mujoco", "PPO", "LiDaR"]
 
 - name: Extended Kalman Filter for a 6-wheel Mars Rover
-  image: /images/rocker_bogie_diagram.png
+  image: /images/IsometricRover.png
   role: "Personal Project"
   timeline: "August 2025 - Present"
   url: "/posts/perseverance/"
