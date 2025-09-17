@@ -22,12 +22,13 @@ experiences:
   positions:
   - designation: Planning and Controls Intern
     start: June 2025
+    end: September 2025
     # end: Dec 2023
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     tags: ["Python", "C++", "ROS1", "Route Planning", "Navigation Optimization"]
     responsibilities:
-    - Reduced mobile robots' downtime with optimizations to the fleet's charging behavior.
-    - Optimized robot navigation behavior when interacting with chargers, robot queues, and other warehouse resources.
+    - Optimizing fleet behavior with new ROS services bridging navigation stack (C++) and the robot behavior stack (Python).
+    - Performance-tested ROS services on large-scale maps with hundreds of data points, ensuring scalability for fleets of hundreds of robots.
 - company:
     name: GreenSight Inc.
     url: "https://www.greensightag.com/"
@@ -40,7 +41,7 @@ experiences:
   positions:
   - designation: UAV Robotics Engineer Co-op
     start: June 2023
-    end: Dec 2023
+    end: December 2023
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
@@ -61,7 +62,7 @@ experiences:
   positions:
   - designation: Robotics Software Controls Engineer Co-op
     start: July 2022
-    end: Dec 2022
+    end: December 2022
     tags: ["C#", ".NET", "MongoDB", "Robot Navigation Planning", "Heuristic Design"]
     responsibilities:
     - Developed sequencing code in C# for high-level behavior planning and task assignment for heterogeneous robotic agents.
@@ -80,7 +81,7 @@ experiences:
   positions:
   - designation: Software Engineer Co-op
     start: July 2021
-    end: Dec 2021
+    end: December 2021
     tags: ["C#", ".NET", "WPF"]
     responsibilities:
     - Developed an external data persistance mechanism in C# running on the .NET framework for use across various Doble software applications.
