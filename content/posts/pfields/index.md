@@ -12,13 +12,17 @@ menu:
 tags: ["C++", "ROS2", "Motion Planning", "Optimal Control", "Trajectory Smoothing"]
 repo: https://github.com/argallab/pfields_2025
 ---
-This project offers a potential field based motion planning library for robotic manipulators, written in C++ and compatible with ROS2. Utilizing attractive and repulsive force generation in SE(3), whole-body obstacle avoidance using FCL collision geometry, users are able to submit their robot's URDF and plan smooth, collision-free trajectories. The library offers two main methods for motion planning:
+This project offers a potential field based motion planning library for robotic manipulators, written in C++ and compatible with ROS2. Utilizing attractive and repulsive force generation in SE(3), whole-body obstacle avoidance using FCL collision geometry, users only need to submit their robot's URDF and inverse kinematics solvers to plan smooth, collision-free trajectories. The library offers two main methods for motion planning:
 
 1. **SE(3) Task-Space Planner**: Integrates the planning frame as a 6D pose through the potential field, using the robot's inverse kinematics function to generate joint position and velocity trajectories.
 
 <div align="center">
-  <img src="xarm_obstacle_avoidance_real.gif" alt="Xarm-7 Task-Space Obstacle Avoidance" style="border-radius: 15px; width: 42%; margin: 5px; display: inline-block;">
-  <img src="path_with_rotational_attraction.gif" alt="Path through Obstacle-Rich Environment" style="border-radius: 15px; width: 30%; margin: 5px; display: inline-block;">
+  <img src="xarm_obstacle_avoidance_real.gif" alt="Xarm-7 Task-Space Obstacle Avoidance" style="border-radius: 15px; width: 48%; margin: 5px; display: inline-block;">
+  <img src="path_with_rotational_attraction.gif" alt="Path through Obstacle-Rich Environment" style="border-radius: 15px; width: 40%; margin: 5px; display: inline-block;">
+</div>
+<div align="center" style="font-size: 0.9em; color: #666;">
+  <p style="width: 48%; display: inline-block; margin: 5px;">Example motion of Xarm-7 using task-space planning and end-effector velocity control</p>
+  <p style="width: 40%; display: inline-block; margin: 5px;">Example path through obstacle-rich environment with translational and rotational attraction</p>
 </div>
 
 
@@ -32,18 +36,18 @@ This project offers a potential field based motion planning library for robotic 
 _TODO: Another real robot demo video with WBV planning_
 
 
-### Repository Structure:
+## Repository Structure
 
 _TODO: Insert Block Diagram Here (Work in Progress)_
 
-#### Core C++ Library (`pfield_library`)
-The `PotentialField` class orchestrates the internal components:
-  *   **Obstacle Primitives:** Manages different obstacle shapes and their properties.
-  *   **PFKinematics:** Handles URDF parsing, forward kinematics, and Jacobian calculations to understand the robot's geometry and state.
-  *   **IK & Robot Plugins:** Provides the interface for inverse kinematics solvers, allowing different robots to be integrated.
-  *   **Algorithms:** Contains the mathematical implementations for attractive/repulsive forces, RK4 integration, and velocity/acceleration limiting.
+### Core C++ Library
+The `PotentialField` class manages the overall potential field representation, and offers path planning methods among others to interact/query the field. The core library has the following features:
+  *   **Obstacle Primitives:** Capable of representing primitives and mesh obstacles.
+  *   **Robot Kinematics:** The `PFKinematics` module handles URDF parsing, forward kinematics, and Jacobian calculations to understand the robot's geometry and state and provides the `PotentialField` class with `ObstacleType::ROBOT` obstacles to represent the robot's links in the environment, enabling whole-body obstacle avoidance.
+  *   **IK & Robot Plugins:** Abstract Base Classes that provide an interface for inverse kinematics solvers and robot-specific controllers. Users can implement their own derived classes to implement their own robot's kinematics and control methods.
+  *   **Math Functions:** Contains the mathematical implementations for attractive/repulsive forces, RK4 integration, and velocity/acceleration limiting via soft-saturation and rate-limiting.
 
-#### ROS2 Application Layer (`potential_fields` & `potential_fields_interfaces`)
+### ROS2 Application Layer
 The `pfield_manager` node is the central hub that bridges ROS to the underlying C++ logic. Internally, it maintains an instance of the `PotentialField` class and exposes its functionality through a handful of services and topics.
 
 - **`PlanPath` Service:** Clients can request a end-effector trajectory (position and velocity), and/or a joint trajectory by providing start and goal poses, initial joint states, and planning parameters (tolerance, planning method, and max planning time)
