@@ -25,7 +25,8 @@ This project offers a potential field based motion planning library for robotic 
 2. **Whole-Body Velocity Planner**: Computes repulsive forces throughout the robot's links and combines them with attractive forces at the end-effector to produce a joint velocity trajectory that avoid obstacles while moving toward the goal.
 
 <div align="center">
-  <img src="wbv_planning.gif" alt="Whole-Body Velocity Planning Visualization" style="border-radius: 15px; width: 40%; margin: 5px; display: inline-block;">
+  <img src="wbv_planning.gif" alt="Whole-Body Velocity Planning Visualization" style="border-radius: 15px; width: 45%; margin: 5px; display: inline-block;">
+   <img src="wbv_plots.png" alt="Whole-Body Velocity Planning Visualization" style="border-radius: 15px; width: 45%; margin: 5px; display: inline-block;">
 </div>
 
 _TODO: Another real robot demo video with WBV planning_
