@@ -32,7 +32,7 @@ projects:
   tags: ["ROS2", "C++", "Python", "OnShape", "Parallel Robot Kinematics", "I2C Sensors", "Alpha-Beta Filtering"]
 
 - name: Potential Field Motion Planning
-  image: /images/pfield_banner.png
+  image: /images/xarm_obstacle_avoidance_real.gif
   role: "MSR Final Research Project"
   timeline: "April 2025 - December 2025"
   url: "/posts/pfields/"
