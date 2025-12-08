@@ -2,6 +2,7 @@ baseURL: "https://sharwin24.github.io/toha"
 
 languageCode: "en-us"
 title: "Sharwin's Portfolio"
+timeout: 120000 # Increase timeout to 120 seconds to avoid build failures
 outputs:
   home:
     - "HTML"
@@ -125,7 +126,7 @@ params:
   # Configure the number of section title visible in the top navbar
   topNavbar:
     maxVisibleSections: 5
-  
+
   # Enable and configure blog posts
   # site.Params.features.tags.enable
   features:
@@ -156,7 +157,7 @@ params:
         hljs:
           # see: https://highlightjs.readthedocs.io/en/latest/api.html#configure
           noHighlightRe: /^no-highlight$/i
-  
+
     # Enable this to use `embed-pdf` shortcode.
     embedpdf:
       enable: false
