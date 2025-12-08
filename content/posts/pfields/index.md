@@ -70,7 +70,7 @@ There are several avenues for future development and improvements the the librar
 <details>
 <summary><strong>Potential Field Equations</strong></summary>
 
-These equations were obtained from the [Principles of Robot Motion: Theory, Algorithms, and Implementations](https://ieeexplore.ieee.org/book/6267238) textbook [2] and [Real-Time Obstacle Avoidance for Manipulators and Mobile Robots](https://ieeexplore.ieee.org/stamp/stampCaCancaCccCfaksdfojas;kfjd;ksldadjf.jsp?tp=&arnumber=1087247) [1], which describes the derivation of the potential equations, how to obtain the gradients, and how to obtain a velocity from the gradients.
+These equations were obtained from the [Principles of Robot Motion: Theory, Algorithms, and Implementations](https://ieeexplore.ieee.org/book/6267238) textbook and [Real-Time Obstacle Avoidance for Manipulators and Mobile Robots](https://ieeexplore.ieee.org/stamp/stampCaCancaCccCfaksdfojas;kfjd;ksldadjf.jsp?tp=&arnumber=1087247), which describes the derivation of the potential equations, how to obtain the gradients, and how to obtain a velocity from the gradients.
 
 In this library, the potential field produces a task-space wrench over the robot's end-effector pose:
 
@@ -181,3 +181,4 @@ Where:
 ## References
 
 [1] [Principles of Robot Motion: Theory, Algorithms, and Implementations](https://ieeexplore.ieee.org/book/6267238)
+[2] [Real-Time Obstacle Avoidance for Manipulators and Mobile Robots](https://ieeexplore.ieee.org/stamp/stampCaCancaCccCfaksdfojas;kfjd;ksldadjf.jsp?tp=&arnumber=1087247)
