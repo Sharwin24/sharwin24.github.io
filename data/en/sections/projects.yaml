@@ -112,14 +112,14 @@ projects:
 #   summary: Utilized a turtlebot3 with a Zed 2i camera to create a racing simulator that uses Visual-Inertial Odometry (VIO) for localization and mapping.
 #   tags: ["Computer Vision", "C++", "OpenCV", "Zed 2i Camera", "Visual-Inertial Odometry"]
 
-# - name: Robot Arm Educational Kit
-#   image: /images/kavar_background.jpg
-#   role: "Personal Project"
-#   timeline: "May 2022 - May 2024"
-#   url: "/posts/robot-arm-edu/"
-#   repo: https://github.com/Sharwin24/Robotic-Arm
-#   summary: A 3D-printed robot arm kit for educational purposes. Coupled with a software package intended for students with little to no experience coding to use.
-#   tags: ["3D Printing", "Arduino", "C++"]
+- name: Robot Arm Educational Kit
+  image: /images/kavar_background.jpg
+  role: "Personal Project"
+  timeline: "May 2022 - May 2024"
+  url: "/posts/robot-arm-edu/"
+  repo: https://github.com/Sharwin24/Robotic-Arm
+  summary: A 3D-printed robot arm kit for educational purposes. Coupled with a software package intended for students with little to no experience coding to use.
+  tags: ["3D Printing", "Arduino", "C++"]
 
 # - name: AGV Odometry & Motion Planning
 #   image: /images/pure-pursuit.png
