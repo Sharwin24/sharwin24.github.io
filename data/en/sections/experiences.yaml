@@ -11,6 +11,28 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: Fulfil Solutions Inc.
+    url: "https://www.fulfil.com/"
+    location: Mountain View, CA
+    logo: /images/fulfil.png
+    # Can optionally show a different logo for dark theme
+    # darkLogo: /images/sections/experiences/company2.jpg
+    overview: A warehouse automation company that specializes in groceries, with zero labor pick and pack.
+  positions:
+  # - designation: Robotics Software Engineer (Full-Time)
+  #   start: February 2026
+  #   # end: December 2022
+  #   tags: ["C#", ".NET", "MongoDB", "Robot Navigation Planning", "Heuristic Design"]
+  #   responsibilities:
+  #   - Improving factory throughput by optimizing storage and estimation algorithms
+  - designation: Robotics Software Engineer (Part-Time)
+    start: October 2025
+    # end: February 2026
+    tags: ["C#", ".NET", "MongoDB", "Robot Navigation Planning", "Heuristic Design"]
+    responsibilities:
+    - Improving factory throughput by optimizing storage and estimation algorithms
+
+- company:
     name: Locus Robotics
     url: "https://locusrobotics.com"
     location: Remote (Wilmington, MA)
@@ -23,7 +45,6 @@ experiences:
   - designation: Planning and Controls Intern
     start: June 2025
     end: September 2025
-    # end: Dec 2023
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     tags: ["Python", "C++", "ROS1", "Route Planning", "Navigation Optimization"]
     responsibilities:
@@ -45,7 +66,7 @@ experiences:
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
-    tags: ["RTOS", "C", "SPI", "LoRa", "Espressif"]
+    tags: ["RTOS", "Embedded C", "SPI", "LoRa", "Espressif"]
     responsibilities:
     - Developed RTOS firmware for communications between a swarm of nano-drones and a ground station over a LoRa network.
     - Implemented a Hardware-Abstraction-Layer (HAL) in C for the ESP32 platform to interface with a custom LoRa chipset.
@@ -66,7 +87,7 @@ experiences:
     tags: ["C#", ".NET", "MongoDB", "Robot Navigation Planning", "Heuristic Design"]
     responsibilities:
     - Developed sequencing code in C# for high-level behavior planning and task assignment for heterogeneous robotic agents.
-    - Composed data fetching functons to bridge C# sequencing code with a MongoDB database.
+    - Composed data fetching functions to bridge C# sequencing code with a MongoDB database.
     - Optimized AGV planning and curated heuristics for maintaining the factory's health while improving throughput and efficiency.
     - Deployed automated factory-wide alerts and notifications for operators to monitor the health of the storage and retrieval system.
 

@@ -31,14 +31,14 @@ projects:
   summary: An open source ROS package for kinematic control and motion planning for delta robots.
   tags: ["ROS2", "C++", "Python", "OnShape", "Parallel Robot Kinematics", "I2C Sensors", "Alpha-Beta Filtering"]
 
-- name: Toasting Bread with a Franka Robot Arm
-  image: /images/toast_grab.gif
-  role: "ME495: Embedded Systems Final Project"
-  timeline: "Nov 2024 - Dec 2024"
-  repo: https://github.com/snydergi/ToastBot
-  url: "/posts/toastbot/"
-  summary: A system that toasts bread using a Franka Emika Panda robot arm and an Intel Realsense Camera.
-  tags: ["Python", "ROS2", "RViz", "Moveit API", "Intel Realsense"]
+- name: Potential Field Motion Planning
+  image: /images/xarm_obstacle_avoidance_real.gif
+  role: "MSR Final Research Project"
+  timeline: "April 2025 - December 2025"
+  url: "/posts/pfields/"
+  repo: https://github.com/argallab/pfields_2025
+  summary: A C++ motion planning library using potential fields for obstacle avoidance and trajectory smoothing.
+  tags: ["C++", "ROS2", "Motion Planning", "Optimal Control", "Trajectory Smoothing"]
 
 - name: Simulation of a Mobile Manipulator
   image: /images/mobile_manipulation.gif
@@ -49,6 +49,15 @@ projects:
   summary: Simulating a pick and place task with the KUKA YouBot using a task-space feed-forward PID controller and Odometry.
   tags: ["Python", "CoppeliaSim", "Odometry", "PID Control", "Omnidirectional Robot Kinematics"]
 
+- name: Toasting Bread with a Franka Robot Arm
+  image: /images/toast_grab.gif
+  role: "ME495: Embedded Systems Final Project"
+  timeline: "Nov 2024 - Dec 2024"
+  repo: https://github.com/snydergi/ToastBot
+  url: "/posts/toastbot/"
+  summary: A system that toasts bread using a Franka Emika Panda robot arm and an Intel Realsense Camera.
+  tags: ["Python", "ROS2", "RViz", "Moveit API", "Intel Realsense"]
+
 - name: Automated Poker Table
   image: /images/bike_dealer.gif
   role: "ECE 2023 Senior Capstone Project"
@@ -58,14 +67,14 @@ projects:
   summary: A robotic system that facilitates a game of poker with automated shuffling, dealing, and game management.
   tags: ["Arduino", "Python", "Raspberry Pi", "I2C", "Stepper Motors", "Solidworks"]
 
-- name: Teaching an Old Dog New Tricks
-  role: "MSAI437: Deep Learning Final Project"
-  image: /images/go2_strafing.gif
-  timeline: "Mar 2025"
-  url: "/posts/go2-tasks/"
-  repo: "https://github.com/HarrisonBounds/go2RL"
-  summary: Teaching the Unitree Go2 robot dog various locomotion tasks using reinforcement learning on the Genesis simulator.
-  tags: ["Python", "Reinforcement Learning", "PPO", "Genesis"]
+- name: Extended Kalman Filter for a 6-wheel Mars Rover
+  image: /images/IsometricRover.png
+  role: "Personal Project"
+  timeline: "August 2025 - Present"
+  url: "/posts/perseverance/"
+  repo: https://github.com/Sharwin24/Perseverance
+  summary: State estimation using a kalman filter for a 6-wheel Mars rover with a rocker-bogie suspension system.
+  tags: ["Python", "C++", "Extended Kalman Filter", "Sensor Fusion", "Robot Dynamics"]
 
 - name: RL Mobile Robot Navigation
   image: /images/jackal_lidar.png
@@ -76,14 +85,14 @@ projects:
   summary: Teaching a Jackal mobile robot with a LiDaR to navigate using reinforcement learning with Mujoco.
   tags: ["Python", "Reinforcement Learning", "Mujoco", "PPO", "LiDaR"]
 
-- name: Extended Kalman Filter for a 6-wheel Mars Rover
-  image: /images/IsometricRover.png
-  role: "Personal Project"
-  timeline: "August 2025 - Present"
-  url: "/posts/perseverance/"
-  repo: https://github.com/Sharwin24/Perseverance
-  summary: State estimation using a kalman filter for a 6-wheel Mars rover with a rocker-bogie suspension system.
-  tags: ["Python", "C++", "Extended Kalman Filter", "Sensor Fusion", "Robot Dynamics"]
+- name: Teaching an Old Dog New Tricks
+  role: "MSAI437: Deep Learning Final Project"
+  image: /images/go2_strafing.gif
+  timeline: "Mar 2025"
+  url: "/posts/go2-tasks/"
+  repo: "https://github.com/HarrisonBounds/go2RL"
+  summary: Teaching the Unitree Go2 robot dog various locomotion tasks using reinforcement learning on the Genesis simulator.
+  tags: ["Python", "Reinforcement Learning", "PPO", "Genesis"]
 
 - name: Chess Robot
   role: "NEU Robotics Club Project"
