@@ -1,7 +1,7 @@
 ---
 title: "Potential Field Motion Planning"
 date: 2025-12-02T09:00:00+00:00
-description: Motion Planning Library using Potential Fields for Obstacle Avoidance and Goal Attraction
+description: A fast, extensible potential field motion planning library for robotic manipulators in C++
 hero: images/pfield_banner.png
 author:
   image: /images/sharwin_portrait.jpg
@@ -12,6 +12,8 @@ menu:
 tags: ["C++", "ROS2", "Motion Planning", "Optimal Control", "Trajectory Smoothing"]
 repo: https://github.com/argallab/pfields_2025
 ---
+Potential fields offer a computationally efficient method for real-time motion planning and obstacle avoidance in robotic systems. By modeling the robot's environment as a field of attractive and repulsive forces, potential field methods enable robots to navigate complex environments while avoiding collisions. This approach is particularly useful for robotic manipulators operating in complex obstacle-rich environments, where traditional motion planning algorithms may struggle to provide real-time solutions.
+
 This project offers a potential field based motion planning library for robotic manipulators, written in C++ and compatible with ROS2. Utilizing attractive and repulsive force generation in SE(3), whole-body obstacle avoidance using FCL collision geometry, users only need to submit their robot's URDF and inverse kinematics solvers to plan smooth, collision-free trajectories. The library offers two main methods for motion planning:
 
 1. **SE(3) Task-Space Planner**: Integrates the planning frame as a 6D pose through the potential field, using the robot's inverse kinematics function to generate joint position and velocity trajectories.
@@ -25,7 +27,6 @@ This project offers a potential field based motion planning library for robotic 
   <p style="width: 40%; display: inline-block; margin: 5px;">Example path through obstacle-rich environment with translational and rotational attraction</p>
 </div>
 
-
 2. **Whole-Body Velocity Planner**: Computes repulsive forces throughout the robot's links and combines them with attractive forces at the end-effector to produce a joint velocity trajectory that avoid obstacles while moving toward the goal.
 
 <div align="center">
@@ -38,11 +39,13 @@ _TODO: Another real robot demo video with WBV planning_
 
 ## Repository Structure
 
-_TODO: Insert Block Diagram Here (Work in Progress)_
+<div align="center">
+  <img src="architecture.svg" alt="Block Diagram for Architecture" style="border-radius: 10px; width: 98%; margin: 5px; display: inline-block;">
+</div>
 
 ### Core C++ Library
 The `PotentialField` class manages the overall potential field representation, and offers path planning methods among others to interact/query the field. The core library has the following features:
-  *   **Obstacle Primitives:** Capable of representing primitives and mesh obstacles.
+  *   **Obstacle Primitives:** Capable of representing primitives and mesh obstacles with signed distance queries via FCL.
   *   **Robot Kinematics:** The `PFKinematics` module handles URDF parsing, forward kinematics, and Jacobian calculations to understand the robot's geometry and state and provides the `PotentialField` class with `ObstacleType::ROBOT` obstacles to represent the robot's links in the environment, enabling whole-body obstacle avoidance.
   *   **IK & Robot Plugins:** Abstract Base Classes that provide an interface for inverse kinematics solvers and robot-specific controllers. Users can implement their own derived classes to implement their own robot's kinematics and control methods.
   *   **Math Functions:** Contains the mathematical implementations for attractive/repulsive forces, RK4 integration, and velocity/acceleration limiting via soft-saturation and rate-limiting.
