@@ -66,6 +66,7 @@ There are several avenues for future development and improvements the the librar
 - **Dynamic Obstacles:** Currently, dynamic obstacles are able to be tagged as such and ignored, but the library does not yet consider them when evaluating field forces.
 - **Self-Collision Avoidance:** While the library can represent the robot's links and support whole-body obstacle avoidance by integrating repulsive forces onto each link into joint velocities, it does not yet support self-collision avoidance. In order to support this, the library would need to expand into a hybrid between configuration-space planning and whole-body velocity planning.
 - **Improving Whole-Body Velocity Planning:** The current WBV planner uses a simple weighted sum of repulsive forces on each link combined with attractive forces at the end-effector. Future work could explore more advanced optimization-based approaches to better balance obstacle avoidance and goal attraction. Additionally, converting joint torques into joint velocities using robot dynamics could improve performance.
+- **Profiling and Optimization:** Further profiling and optimization of the core C++ library could yield performance improvements, especially for high-DOF robots or complex environments with many obstacles. There are tons of opportunities for computational improvements regarding potential field evaluation, parallelization, and other lower impact micro-optimizations.
 
 <details>
 <summary><strong>Potential Field Equations</strong></summary>
