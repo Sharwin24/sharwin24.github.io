@@ -182,4 +182,5 @@ Where:
 ## References
 
 [1] [Principles of Robot Motion: Theory, Algorithms, and Implementations](https://ieeexplore.ieee.org/book/6267238)
+
 [2] [Real-Time Obstacle Avoidance for Manipulators and Mobile Robots](https://ieeexplore.ieee.org/stamp/stampCaCancaCccCfaksdfojas;kfjd;ksldadjf.jsp?tp=&arnumber=1087247)
