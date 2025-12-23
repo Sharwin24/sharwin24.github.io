@@ -1,43 +1,37 @@
 ---
-title: "Potential Field Motion Planning"
+title: "Potential Field Library"
 date: 2025-12-02T09:00:00+00:00
-description: A fast, extensible potential field motion planning library for robotic manipulators in C++
+description: A fast, extensible potential field obstacle avoidance C++ library for robotic manipulators
 hero: images/pfield_banner.png
 author:
   image: /images/sharwin_portrait.jpg
 menu:
   sidebar:
-    name: Potential Field Motion Planning
+    name: Potential Field Library
     identifier: pfields
 tags: ["C++", "ROS2", "Motion Planning", "Optimal Control", "Trajectory Smoothing"]
 repo: https://github.com/argallab/pfields_2025
 ---
-Potential fields offer a computationally efficient method for real-time motion planning and obstacle avoidance in robotic systems. By modeling the robot's environment as a field of attractive and repulsive forces, potential field methods enable robots to navigate complex environments while avoiding collisions. This approach is particularly useful for robotic manipulators operating in complex obstacle-rich environments, where traditional motion planning algorithms may struggle to provide real-time solutions.
+This project offers a potential field based motion planning library for robotic manipulators, written in C++ and compatible with ROS2. Utilizing attractive and repulsive force generation in SE(3), whole-body obstacle avoidance using FCL collision geometry, users only need to submit their robot's URDF and inverse kinematics solvers to plan smooth, collision-free trajectories.
 
-This project offers a potential field based motion planning library for robotic manipulators, written in C++ and compatible with ROS2. Utilizing attractive and repulsive force generation in SE(3), whole-body obstacle avoidance using FCL collision geometry, users only need to submit their robot's URDF and inverse kinematics solvers to plan smooth, collision-free trajectories. The library offers two main methods for motion planning:
-
-1. **SE(3) Task-Space Planner**: Integrates the planning frame as a 6D pose through the potential field, using the robot's inverse kinematics function to generate joint position and velocity trajectories.
+#### **SE(3) Task-Space Planning**
 
 <div align="center">
-  <img src="xarm_obstacle_avoidance_real.gif" alt="Xarm-7 Task-Space Obstacle Avoidance" style="border-radius: 15px; width: 48%; margin: 5px; display: inline-block;">
-  <img src="path_with_rotational_attraction.gif" alt="Path through Obstacle-Rich Environment" style="border-radius: 15px; width: 40%; margin: 5px; display: inline-block;">
-</div>
-<div align="center" style="font-size: 0.9em; color: #666;">
-  <p style="width: 48%; display: inline-block; margin: 5px;">Example motion of Xarm-7 using task-space planning and end-effector velocity control</p>
-  <p style="width: 40%; display: inline-block; margin: 5px;">Example path through obstacle-rich environment with translational and rotational attraction</p>
+  <img src="task_space_demo_xarm.gif" alt="Xarm-7 Task-Space Obstacle Avoidance" style="border-radius: 15px; width: 48%; margin: 5px; display: inline-block;">
+  <img src="task_space_demo_rviz.gif" alt="Task Space Planning Demo RViz Visualization" style="border-radius: 15px; width: 40%; margin: 5px; display: inline-block;">
 </div>
 
-2. **Whole-Body Velocity Planner**: Computes repulsive forces throughout the robot's links and combines them with attractive forces at the end-effector to produce a joint velocity trajectory that avoid obstacles while moving toward the goal.
+#### **Whole-Body Velocity Planner**
 
 <div align="center">
-  <img src="demo2_xarm.gif" alt="Whole-Body Velocity Planning Visualization" style="border-radius: 15px; width: 45%; margin: 5px; display: inline-block;">
-   <img src="demo2_plots.png" alt="Whole-Body Velocity Planning Visualization" style="border-radius: 15px; width: 45%; margin: 5px; display: inline-block;">
+  <img src="demo2_xarm.gif" alt="Whole-Body Velocity Planning Demo" style="border-radius: 15px; width: 45%; margin: 5px; display: inline-block;">
+   <img src="wbv_demo2_rviz.gif" alt="Whole-Body Velocity Planning RViz Visualization" style="border-radius: 15px; width: 45%; margin: 5px; display: inline-block;">
 </div>
 
 ## Repository Structure
 
 <div align="center">
-  <img src="architecture.svg" alt="Block Diagram for Architecture" style="border-radius: 10px; width: 98%; margin: 5px; display: inline-block;">
+  <img src="architecture.svg" alt="Block Diagram for Repository Architecture" style="border-radius: 10px; width: 98%; margin: 5px; display: inline-block;">
 </div>
 
 ### Core C++ Library
