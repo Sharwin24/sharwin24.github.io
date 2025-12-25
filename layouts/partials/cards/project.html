@@ -13,7 +13,7 @@
             {{ if ne $imageImage.MediaType.SubType "svg" }}
               {{ $imageImage = $imageImage.Fit "1000x1000" }}
             {{ end }}
-            <img class="card-img-top" src="{{ $imageImage.RelPermalink }}" alt="{{ .name }}" />
+            <img class="card-img-top" src="{{ $imageImage.RelPermalink }}" alt="{{ .name }}" loading="lazy" decoding="async" />
           {{ end }}
         </div>
         {{ end }}
@@ -34,12 +34,12 @@
                       {{ if ne $logoImage.MediaType.SubType "svg" }}
                         {{ $logoImage = $logoImage.Fit "24x24" }}
                       {{ end }}
-                      <img class="card-img-xs" src="{{ $logoImage.RelPermalink }}" alt="{{ .name }}" />
+                      <img class="card-img-xs" src="{{ $logoImage.RelPermalink }}" alt="{{ .name }}" loading="lazy" decoding="async" />
                     {{ end }}
                   {{ end }}
 
               {{ end }}
-              
+
               <h5 class="card-title mb-0">{{ .name }}</h5>
             </div>
             <div class="sub-title">
