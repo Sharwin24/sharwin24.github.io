@@ -2,7 +2,7 @@
 title: "Perseverance"
 date: 2025-08-12T09:00:00+00:00
 description: EKF-based state estimation and navigation for a Mars rover–inspired 6‑wheel robot
-hero: RoverTeleop.gif
+hero: PerseverenceInRViz.png
 author:
   image: /images/sharwin_portrait.jpg
 menu:
