@@ -70,11 +70,11 @@ projects:
 - name: Extended Kalman Filter for a 6-wheel Mars Rover
   image: /images/IsometricRover.png
   role: "Personal Project"
-  timeline: "August 2025 - Present"
+  timeline: "July 2025 - Present"
   url: "/posts/perseverance/"
   repo: https://github.com/Sharwin24/Perseverance
   summary: State estimation using a kalman filter for a 6-wheel Mars rover with a rocker-bogie suspension system.
-  tags: ["Python", "C++", "Extended Kalman Filter", "Sensor Fusion", "Robot Dynamics"]
+  tags: ["C++", "Python", "Extended Kalman Filter", "Sensor Fusion", "Mobile Robot Dynamics"]
 
 - name: RL Mobile Robot Navigation
   image: /images/jackal_lidar.png
