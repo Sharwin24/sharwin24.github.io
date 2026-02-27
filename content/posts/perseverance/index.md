@@ -19,7 +19,7 @@ The primary purpose of this project is to learn more about the full robotics sta
 <div align="center"><em>Work in progress — more images, math, and code coming soon.</em></div>
 
 <div align="center">
-  <img src="TopDownRover.png" alt="Top-Down View of Rover" style="border-radius: 15px; width: 85%; margin: 5px; display: inline-block;">
+  <img src="TopDownRover.png" alt="Top-Down View of Rover" style="border-radius: 15px; width: 70%; margin: 5px; display: inline-block;">
 </div>
 
 Check out the interactive python files in the `prototyping` folder in the [GitHub repository](https://github.com/Sharwin24/Perseverance) for a deeper dive and visualization of the ackermann steering and rocker-bogie kinematics. Run `rover_teleop.py` to teleoperate the rover and visualize the steering geometry with the instantaneous center of rotation (ICR) and turning radius visualized. Run `interactive_planner.py` to explore different configurations of velocity/acceleration limits and steering angle limits while planning a smooth trajectory between a start and goal pose.
