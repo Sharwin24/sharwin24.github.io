@@ -16,7 +16,7 @@ Perseverance is an open‑source mobile robot inspired by NASA’s Mars rover. T
 
 The primary purpose of this project is to learn more about the full robotics stack for a mobile robot, including EKF SLAM, navigation, and control. I've selected the 6-wheel MARS Rover form factor because it's my favorite robot and I want to try and build a novel motion model and autonomous navigation stack for the rover and open-source it for others to try.
 
-<div align="center"><em>Work in progress — more images, math, and code coming soon.</em></div>
+<div align="center"><em>Work in progress, more images, math, and code coming soon.</em></div>
 
 <div align="center">
   <img src="TopDownRover.png" alt="Top-Down View of Rover" style="border-radius: 15px; width: 70%; margin: 5px; display: inline-block;">
