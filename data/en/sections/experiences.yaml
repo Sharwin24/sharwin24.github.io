@@ -19,15 +19,15 @@ experiences:
     # darkLogo: /images/sections/experiences/company2.jpg
     overview: A warehouse automation company that specializes in groceries, with zero labor pick and pack.
   positions:
-  # - designation: Robotics Software Engineer (Full-Time)
-  #   start: February 2026
-  #   # end: December 2022
-  #   tags: ["C#", ".NET", "MongoDB", "Robot Navigation Planning", "Heuristic Design"]
-  #   responsibilities:
-  #   - Improving factory throughput by optimizing storage and estimation algorithms
+  - designation: Robotics Software Engineer (Full-Time)
+    start: February 2026
+    # end: December 2022
+    tags: ["C#", ".NET", "MongoDB", "Robot Navigation Planning", "Heuristic Design"]
+    responsibilities:
+    - Optimizing grocery packing heuristics to improve packing reliability, efficiency, and density
   - designation: Robotics Software Engineer (Part-Time)
     start: October 2025
-    # end: February 2026
+    end: February 2026
     tags: ["C#", ".NET", "MongoDB", "Robot Navigation Planning", "Heuristic Design"]
     responsibilities:
     - Improving factory throughput by optimizing storage and estimation algorithms
