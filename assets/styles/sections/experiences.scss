@@ -105,6 +105,13 @@
     }
   }
 
+  .experience-divider {
+    border: none;
+    border-top: 1px solid get-light-color('accent-color');
+    opacity: 0.4;
+    margin: 1.5rem 0;
+  }
+
   .experience-tags-holder {
     margin: 0.25rem 0 0.75rem 0;
     .badge {
@@ -139,6 +146,9 @@
 
 html[data-theme='dark'] {
   .experiences-section {
+    .experience-divider {
+      border-top-color: get-dark-color('accent-color');
+    }
     ul {
       & > li {
         color: get-dark-color('text-color');

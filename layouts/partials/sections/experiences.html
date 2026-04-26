@@ -15,6 +15,7 @@
   <div class="container timeline text-justify">
    {{ $totalExperiences:= len .experiences }}
    {{ range $index,$experience:= .experiences }}
+      {{ if gt $index 0 }}<hr class="experience-divider">{{ end }}
       <div class="row align-items-center justify-content-start d-flex">
         {{ partial "sections/experiences/positions.html" $experience }}
       </div>
