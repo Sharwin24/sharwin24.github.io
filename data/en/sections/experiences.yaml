@@ -11,6 +11,18 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: Simbe Robotics
+    url: "https://www.simberobotics.com/"
+    location: Burlingame, CA
+    logo: /images/simbe.png
+    overview: A robotics company that builds autonomous mobile robots (AMRs) to improve retail store operations and customer experience.
+  positions:
+  - designation: Robotics Software Engineer
+    start: May 2026
+    # end: August 2026
+    tags: ["ROS", "C++"]
+
+- company:
     name: Fulfil Solutions Inc.
     url: "https://www.fulfil.com/"
     location: Mountain View, CA
@@ -21,7 +33,7 @@ experiences:
   positions:
   - designation: Robotics Software Engineer (Full-Time)
     start: February 2026
-    # end: December 2022
+    end: April 2026
     tags: ["C#", ".NET", "MongoDB", "Robot Navigation Planning", "Heuristic Design"]
     responsibilities:
     - Optimizing grocery packing heuristics to improve packing reliability, efficiency, and density
